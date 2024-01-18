@@ -16,6 +16,10 @@
   --text-shadow-primaryHover: 2px 2px 4px rgba(213, 152, 205, 0.5);
 }
 
+HTML {
+  scroll-behavior: smooth;
+}
+
 CTS:hover {
   text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
 }

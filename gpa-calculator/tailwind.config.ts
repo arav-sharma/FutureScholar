@@ -20,6 +20,11 @@ const config: Config = {
         'primary': "#2F27CE",
         'secondary': "#DEDCFF",
       },
+      extend: {
+        boxShadow: {
+          custom: '0 0 8px 8px white inset',
+        }
+      },
     },
   },
   plugins: [],
