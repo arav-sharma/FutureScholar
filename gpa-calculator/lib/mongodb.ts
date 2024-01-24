@@ -2,7 +2,7 @@
 import { env } from "@/env.mjs"
 import { MongoClient } from "mongodb"
 
-if (!process.env.MONGODB_URI) {
+if (!env.DATABASE_URI) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"')
 }
 

@@ -3,12 +3,13 @@ Source :
 https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/utils/dbConnect.js 
 **/
 import mongoose from "mongoose";
+import { env } from "@/env.mjs";
 
-if (!process.env.MONGODB_URI) {
+if (!env.DATABASE_URI) {
   throw new Error("Please add your MONGODB_URI to .env.local");
 }
 
-const MONGODB_URI: string = process.env.MONGODB_URI;
+const MONGODB_URI: string = env.DATABASE_URI;
 
 /**
  * Global is used here to maintain a cached connection across hot reloads
